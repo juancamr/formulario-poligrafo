@@ -1,0 +1,22 @@
+#familiares button,
+#familiares .card {
+  height: 100px;
+  font-size: 2rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 1.3rem !important;
+}
+
+#familiares .card p {
+  margin: 0;
+  margin-top: 10px;
+  font-size: 0.8rem;
+}
+
+button i {
+  font-size: 2.3rem;
+}

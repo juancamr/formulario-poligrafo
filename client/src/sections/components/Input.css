@@ -1,0 +1,34 @@
+input[type="date"]:before {
+  color: lightgrey;
+  content: attr(placeholder) !important;
+}
+
+.label-radio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem !important;
+  text-align: center;
+  transition: 0.3s;
+  width: 50px;
+  height: 50px;
+  padding: 5px;
+  font-size: 1.3rem;
+  border: 2px solid #ccc;
+  border-radius: 100%;
+}
+
+input[type=radio] {
+  display: none;
+}
+
+input[type="radio"]:checked + label {
+  background-color: black;
+  border: 2px solid black !important;
+  color: #fff;
+}
+
+#financiera .label-radio, #experiencia .label-radio {
+  height: 40px !important;
+  width: 40px !important;
+}
