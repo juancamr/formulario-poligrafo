@@ -1,9 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
 
 body {
   background-color: rgb(250, 250, 250);
   background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
+  /* background: rgb(129, 10, 10);
+  background: radial-gradient(
+    circle,
+    rgba(129, 10, 10, 1) 0%,
+    rgba(201, 97, 97, 1) 0%,
+    rgba(255, 255, 255, 1) 55%
+  ); */
 }
 
 #body-container {

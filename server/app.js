@@ -6,21 +6,30 @@ const port = 3000
 
 const app = express()
 app.use(bodyParser.urlencoded({extended: true}))
-app.use(express.static('../client/build'))
+app.use(express.static('../client/build/'))
 
-const con = mysql.createConnection({
+const connection = mysql.createConnection({
     host: 'localhost',
     user: 'root',
-    password: process.env.PASSWORD_DB
+    password: process.env.PASSWORD_DB || '',
+    database: 'prueba'
 })
 
-con.connect(function(err) {
+connection.connect(function(err) {
     if (!err) console.log('Connected to mysql!');
     else console.log('Something went wrong');
 })
 
-app.get('/*', function(req, res) {
-    res.sendFile('index.html')
+app.post('/submit', (req, res) => {
+    connection.query('INSERT INTO ...');
+})
+
+app.get('/success', (req, res) => {
+    res.sendFile(__dirname + '/success.html')
+})
+
+app.get('/*', (req, res) => {
+    res.redirect('/')
 })
 
 app.listen(port, () => {

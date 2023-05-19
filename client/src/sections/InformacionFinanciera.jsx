@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import InputRadio from "./components/InputRadio";
 import TextArea from "./components/TextArea";
 import InputText from "./components/InputTextSimple";
+import Zoom from "@mui/material/Zoom";
 
 function InformacionFinanciera() {
   const [isShow, setIsShow] = useState(false);
