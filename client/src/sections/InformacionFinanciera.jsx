@@ -19,7 +19,7 @@ function InformacionFinanciera() {
   ];
 
   return (
-    <div id="financiera" className="carousel-item active">
+    <div id="financiera" className="carousel-item">
       <h1>Informaci&oacute;n Financiera</h1>
       <div className="row mb-3">
         <div className="col-8 d-flex align-items-center">

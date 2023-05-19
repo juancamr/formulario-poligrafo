@@ -6,14 +6,14 @@ import InputSelect from "./components/InputSelect";
 
 export default function () {
   return (
-    <div className="carousel-item">
+    <div className="carousel-item active">
       <h1>Datos personales</h1>
       <div className="row">
         <InputText placeholder="Nombres" name="nombres" />
         <InputText placeholder="Apellidos" name="apellidos" />
         <InputText placeholder="Razon Social" name="razon_social" />
         <InputText placeholder="Cargo" name="cargo" />
-        <InputDate placeholder="Fecha de nacimiento" name="fecha_nacimiento" />
+        <InputDate placeholder="Nacimiento" name="fecha_nacimiento" />
         <InputText placeholder="Lugar de nacimiento" name="lugar_nacimiento" />
         <InputText placeholder="Nacionalidad" name="nacionalidad" />
         <div className="col-6">

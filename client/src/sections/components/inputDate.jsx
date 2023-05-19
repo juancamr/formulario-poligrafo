@@ -6,9 +6,8 @@ function inputDate(props) {
     <div className="col-6">
       <input
         type="date"
-        placeholder={props.placeholder}
         name={props.name}
-        className="form-control"
+        className="form-control py-3"
       />
     </div>
   );
